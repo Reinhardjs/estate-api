@@ -9,7 +9,7 @@ import (
 
 var CreateEstate = func(w http.ResponseWriter, r *http.Request) {
 
-	user := r.Context().Value("user").(uint) //Grab the id of the user that send the request
+	//user := r.Context().Value("user").(uint) //Grab the id of the user that send the request
 	estate := &models.Estate{}
 
 	err := json.NewDecoder(r.Body).Decode(estate)
@@ -18,7 +18,6 @@ var CreateEstate = func(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	estate.UserId = user
 	resp := estate.Create()
 	u.Respond(w, resp)
 }

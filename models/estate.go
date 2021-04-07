@@ -9,9 +9,9 @@ import (
 
 type Estate struct {
 	gorm.Model
-	Name   string `json:"name"`
-	Phone  string `json:"phone"`
-	UserId uint   `json:"user_id"` //The user that this estate belongs to
+	Title       string `json:"title"`
+	Description string `json:"description"`
+	ModelUrl    string `json:"modelUrl`
 }
 
 /*
@@ -20,16 +20,12 @@ returns message and true if the requirement is met
 */
 func (estate *Estate) Validate() (map[string]interface{}, bool) {
 
-	if estate.Name == "" {
-		return u.Message(false, "estate name should be on the payload"), false
+	if estate.Title == "" {
+		return u.Message(false, "Estate title should be on the payload"), false
 	}
 
-	if estate.Phone == "" {
-		return u.Message(false, "Phone number should be on the payload"), false
-	}
-
-	if estate.UserId <= 0 {
-		return u.Message(false, "User is not recognized"), false
+	if estate.Description == "" {
+		return u.Message(false, "Description should be on the payload"), false
 	}
 
 	//All the required parameters are present
