@@ -5,6 +5,9 @@ import (
 	"net/http"
 	"simple-api/models"
 	u "simple-api/utils"
+	"strconv"
+
+	"github.com/gorilla/mux"
 )
 
 var CreateEstate = func(w http.ResponseWriter, r *http.Request) {
@@ -22,10 +25,25 @@ var CreateEstate = func(w http.ResponseWriter, r *http.Request) {
 	u.Respond(w, resp)
 }
 
-var GetEstatesFor = func(w http.ResponseWriter, r *http.Request) {
+var GetEstate = func(w http.ResponseWriter, r *http.Request) {
+	params := mux.Vars(r)
+	id, err := strconv.Atoi(params["id"])
 
-	id := r.Context().Value("user").(uint)
-	data := models.GetEstates(id)
+	if err != nil {
+		//The passed path parameter is not an integer
+		u.Respond(w, u.Message(false, "There was an error in your request"))
+		return
+	}
+
+	data := models.GetEstate(uint(id))
+	resp := u.Message(true, "success")
+	resp["data"] = data
+	u.Respond(w, resp)
+}
+
+var GetEstates = func(w http.ResponseWriter, r *http.Request) {
+	// id := r.Context().Value("user").(uint)
+	data := models.GetEstates()
 	resp := u.Message(true, "success")
 	resp["data"] = data
 	u.Respond(w, resp)

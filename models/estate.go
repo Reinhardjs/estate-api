@@ -50,15 +50,17 @@ func GetEstate(id uint) *Estate {
 	estate := &Estate{}
 	err := GetDB().Table("estates").Where("id = ?", id).First(estate).Error
 	if err != nil {
+		fmt.Println(err)
 		return nil
 	}
 	return estate
 }
 
-func GetEstates(user uint) []*Estate {
+func GetEstates() []*Estate {
 
 	estates := make([]*Estate, 0)
-	err := GetDB().Table("estates").Where("user_id = ?", user).Find(&estates).Error
+	//err := GetDB().Table("estates").Where("user_id = ?", user).Find(&estates).Error
+	err := GetDB().Table("estates").Find(&estates).Error
 	if err != nil {
 		fmt.Println(err)
 		return nil

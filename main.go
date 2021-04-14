@@ -16,8 +16,9 @@ func main() {
 
 	router.HandleFunc("/api/user/new", controllers.CreateAccount).Methods("POST")
 	router.HandleFunc("/api/user/login", controllers.Authenticate).Methods("POST")
-	router.HandleFunc("/api/contacts/new", controllers.CreateEstate).Methods("POST")
-	router.HandleFunc("/api/me/contacts", controllers.GetEstatesFor).Methods("GET") //  user/2/contacts
+	router.HandleFunc("/api/estates/new", controllers.CreateEstate).Methods("POST")
+	router.HandleFunc("/api/estate/{id}", controllers.GetEstate).Methods("GET")
+	router.HandleFunc("/api/estates/get", controllers.GetEstates).Methods("GET") //  user/2/contacts
 
 	router.Use(app.JwtAuthentication) //attach JWT auth middleware
 
