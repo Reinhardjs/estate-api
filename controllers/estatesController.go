@@ -37,7 +37,7 @@ var GetEstate = func(w http.ResponseWriter, r *http.Request) {
 
 	data := models.GetEstate(uint(id))
 	resp := u.Message(true, "success")
-	resp["data"] = data
+	resp["result"] = data
 	u.Respond(w, resp)
 }
 
@@ -45,6 +45,6 @@ var GetEstates = func(w http.ResponseWriter, r *http.Request) {
 	// id := r.Context().Value("user").(uint)
 	data := models.GetEstates()
 	resp := u.Message(true, "success")
-	resp["data"] = data
+	resp["result"] = data
 	u.Respond(w, resp)
 }
