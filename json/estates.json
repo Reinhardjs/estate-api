@@ -2,30 +2,44 @@
   "result": [
     {
       "id": 1,
-      "title": "Rumah Tipe 34",
+      "title": "Rumah Tipe 36",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-36.jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     },
     {
       "id": 2,
-      "title": "Rumah Tipe 70",
+      "title": "Rumah Tipe 45",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-45.jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     },
     {
       "id": 3,
-      "title": "Rumah Tipe 34",
+      "title": "Rumah Tipe 54",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-54.jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     },
     {
       "id": 4,
+      "title": "Rumah Tipe 60",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-60.jpg",
+      "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
+    },
+    {
+      "id": 5,
       "title": "Rumah Tipe 70",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-70.jpg",
+      "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
+    },
+    {
+      "id": 6,
+      "title": "Rumah Tipe 125",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-125.jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     }
   ]
