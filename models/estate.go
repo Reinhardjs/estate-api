@@ -9,9 +9,10 @@ import (
 
 type Estate struct {
 	gorm.Model
-	Title       string `json:"title"`
-	Description string `json:"description"`
-	ModelUrl    string `json:"modelUrl`
+	Title        string `json:"title"`
+	Description  string `json:"description"`
+	ThumbnailUrl string `json:"thumbnailUrl"`
+	ModelUrl     string `json:"modelUrl"`
 }
 
 /*
