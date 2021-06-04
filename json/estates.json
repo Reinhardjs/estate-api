@@ -18,14 +18,14 @@
       "id": 3,
       "title": "Rumah Tipe 54",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type--54.jpg",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-54(1).jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     },
     {
       "id": 4,
       "title": "Rumah Tipe 60",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type--60.jpg",
+      "thumbnailUrl": "https://raw.githubusercontent.com/reinhardjs/estate-api/main/json/images/type-60(1).jpg",
       "modelUrl": "https://gitlab.com/reinhardjonathansilalahi/3dmodel/-/raw/master/3dmodel"
     },
     {
