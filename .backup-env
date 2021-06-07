@@ -1,0 +1,19 @@
+// Ini konfigurasi untuk konek ke heroku
+// Perhatikan bagian sslmode, harus diisi require, karna pake https
+db_name=d55blv6ula60t2
+db_pass=49a7581280828c72e8f291638c297b4dfe43b88fb856000d96fddb0c5007b53c
+db_user=ivzwrsflcmkwrn
+db_type=postgres
+db_host=ec2-54-205-183-19.compute-1.amazonaws.com
+db_port=5432
+token_password=thisIsTheJwtSecretPassword
+sslmode=require
+
+//db_name=postgres
+//db_pass=password123
+//db_user=postgres
+//db_type=postgres
+//db_host=localhost
+//db_port=5432
+//token_password=thisIsTheJwtSecretPassword
+//sslmode=disable
