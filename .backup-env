@@ -1,3 +1,5 @@
+#isi dari .backup-env sama aja dari .env
+
 // Ini konfigurasi untuk konek ke heroku
 // Perhatikan bagian sslmode, harus diisi require, karna pake https
 db_name=d55blv6ula60t2
